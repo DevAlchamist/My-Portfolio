@@ -11,20 +11,20 @@ const Projects = () => {
       name: "Shop-pulse",
       tech: "MongoDB, Express js, React js, Nodejs, Redux",
       additional: " Node mailer, JWT, Stripe, Tailwind etc.",
-      visit: "",
+      visit: "https://shop-pulse-ecommerce.vercel.app/",
     },
     {
       image: pro2,
       name: "Cine-verse",
       tech: "Scss, React js, Redux,axios",
       additional: " Rest Api, Interactive & Responsive UI ",
-      visit: "",
+      visit: "https://cine-verse-dev-alchamist.vercel.app/",
     },
     {
       image: pro3,
       name: "Wing-Chat",
       tech: "MongoDB, Express js, React js, Nodejs, Redux",
-      additional: "JWT, passport, Multer, Tailwind etc.",
+      additional: "JWT, passport, Multer, Cloudinary",
       visit: "",
     },
   ];
@@ -32,7 +32,7 @@ const Projects = () => {
     <div>
       <section class="text-gray-600 body-font">
         <div class="container px-5 pb-10 mx-auto">
-        <div class="flex flex-col text-center w-full mb-10">
+          <div class="flex flex-col text-center w-full mb-10">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
               My Projects
             </h1>
@@ -55,25 +55,42 @@ const Projects = () => {
                       Additional : {item.additional}
                     </p>
                     <div class="flex items-center flex-wrap ">
-                      <a
-                        href={item.visit}
-                        target="_blank"
-                        class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                      >
-                        Visit
-                        <svg
-                          class="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                      {item.visit ? (
+                        <a
+                          href={item.visit}
+                          target="_blank"
+                          class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
                         >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
+                          Visit
+                          <svg
+                            class="w-4 h-4 ml-2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                      ) : (
+                        <div class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                          Under Development
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            className="ml-2"
+                          >
+                            <path d="M12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-10C22,6.477,17.523,2,12,2z M15.293,16.707L11,12.414V6h2 v5.586l3.707,3.707L15.293,16.707z"></path>
+                          </svg>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
