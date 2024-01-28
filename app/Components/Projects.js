@@ -2,6 +2,7 @@ import React from "react";
 import pro1 from "../../Image/Shop-Pulse-DevAlchamist.png";
 import pro2 from "../../Image/Cine-Verse-DevAlchamist.png";
 import pro3 from "../../Image/20240127_134853.jpg";
+import pro4 from "../../Image/Web capture_28-1-2024_104844_localhost.jpeg";
 import Image from "next/image";
 
 const Projects = () => {
@@ -27,43 +28,50 @@ const Projects = () => {
       additional: "JWT, passport, Multer, Cloudinary",
       visit: "",
     },
+    {
+      image: pro4,
+      name: "Wing-Chat",
+      tech: "MongoDB, next js",
+      additional: "...",
+      visit: "",
+    },
   ];
   return (
     <div>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 pb-10 mx-auto">
-          <div class="flex flex-col text-center w-full mb-10">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 pb-10 mx-auto">
+          <div className="flex flex-col text-center w-full mb-10">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
               My Projects
             </h1>
           </div>
-          <div class="flex flex-wrap justify-center items-center -m-4">
+          <div className="flex flex-wrap justify-center items-center -m-4">
             {project.map((item) => (
-              <div key={item.name} class="p-4 lg:w-[30%] md:w-[60%] ">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <div key={item.name} className="p-4 lg:w-[30%] md:w-[60%] ">
+                <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <Image
-                    class="lg:h-48 md:h-36 w-full object-cover object-center"
+                    className="lg:h-48 md:h-36 w-full object-cover object-center"
                     src={item.image}
                     alt=""
                   />
-                  <div class="p-6">
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  <div className="p-6">
+                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                       {item.name}
                     </h1>
-                    <p class="leading-relaxed mb-3">Tech-Stack : {item.tech}</p>
-                    <p class="leading-relaxed mb-3">
+                    <p className="leading-relaxed mb-3">Tech-Stack : {item.tech}</p>
+                    <p className="leading-relaxed mb-3">
                       Additional : {item.additional}
                     </p>
-                    <div class="flex items-center flex-wrap ">
+                    <div className="flex items-center flex-wrap ">
                       {item.visit ? (
                         <a
                           href={item.visit}
                           target="_blank"
-                          class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                          className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
                         >
                           Visit
                           <svg
-                            class="w-4 h-4 ml-2"
+                            className="w-4 h-4 ml-2"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                             stroke-width="2"
@@ -76,7 +84,7 @@ const Projects = () => {
                           </svg>
                         </a>
                       ) : (
-                        <div class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                        <div className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                           Under Development
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -96,29 +104,29 @@ const Projects = () => {
                 </div>
               </div>
             ))}
-            {/* <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            {/* <div className="p-4 md:w-1/3">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <Image
-                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={pro2}
                   alt=""
                 />
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                <div className="p-6">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     The 400 Blows
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p className="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
-                  <div class="flex items-center flex-wrap">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                  <div className="flex items-center flex-wrap">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                       Learn More
                       <svg
-                        class="w-4 h-4 ml-2"
+                        className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         stroke-width="2"
@@ -130,9 +138,9 @@ const Projects = () => {
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -145,9 +153,9 @@ const Projects = () => {
                       </svg>
                       1.2K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -163,29 +171,29 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="p-4 md:w-1/3">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <Image
-                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={pro3}
                   alt=""
                 />
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                <div className="p-6">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     Shooting Stars
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p className="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                       Learn More
                       <svg
-                        class="w-4 h-4 ml-2"
+                        className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         stroke-width="2"
@@ -197,9 +205,9 @@ const Projects = () => {
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -212,9 +220,9 @@ const Projects = () => {
                       </svg>
                       1.2K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
