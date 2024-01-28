@@ -30,7 +30,7 @@ const Projects = () => {
     },
     {
       image: pro4,
-      name: "Wing-Chat",
+      name: "Task-Mate",
       tech: "MongoDB, next js",
       additional: "...",
       visit: "",
