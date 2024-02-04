@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 pb-10 mx-auto">
+        <div className="container lg:px-2 px-5 md:px-2 xl:p-2 pb-10 mx-auto">
           <div className="flex flex-col text-center w-full mb-10">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
               My Projects
@@ -47,7 +47,7 @@ const Projects = () => {
           </div>
           <div className="flex flex-wrap justify-center items-center -m-4">
             {project.map((item) => (
-              <div key={item.name} className="p-4 lg:w-[30%] md:w-[60%] ">
+              <div key={item.name} className="p-4  lg:w-[30%] md:w-[60%] ">
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <Image
                     className="lg:h-48 md:h-36 w-full object-cover object-center"

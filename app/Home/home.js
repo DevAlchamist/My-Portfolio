@@ -9,8 +9,8 @@ const HomePage = () => {
     <div>
       <div className="h-full bg-gray-200 p-8">
         <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
-          <div class="p-16">
-            <div class="p-8 bg-white shadow mt-24">
+          <div class="lg:p-16 md:p-16 ">
+            <div class="p-8 bg-white shadow mt-20">
               <div class="grid grid-cols-1 md:grid-cols-3">
                 <div class="mt-20 hidden grid-cols-2 text-center md:mt-0 md:grid lg:grid xl:grid">
                   <button class="w-fit rounded bg-blue-400 px-4 py-2 font-medium uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-lg">
@@ -19,31 +19,31 @@ const HomePage = () => {
                 </div>
                 <div class="relative">
                   <div class="absolute inset-x-0 top-0 mx-auto -mt-24 flex h-52 w-52 items-center justify-center overflow-hidden rounded-full border border-gray-300 bg-indigo-100 text-indigo-500 shadow-xl dark:shadow-gray-600">
-                    <Image src={img1} alt="" className=" h-full w-full "/>
+                    <Image src={img1} alt="" className=" h-full w-full " />
                   </div>
                 </div>
                 <div class="mt-32 flex items-end justify-between md:mt-0 md:justify-end lg:justify-end">
-                  <button class="flex transform rounded bg-blue-400 px-4 py-2 font-medium uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-lg md:hidden lg:hidden">
+                  <button class="flex transform rounded bg-blue-400 lg:px-4 md:px-4 md:py-2 lg:py-2 px-2 py-1 sm:text-sm md:font-medium lg:font-medium font-light uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-lg md:hidden lg:hidden">
                     Connect
                   </button>
-                  <button class="transform rounded bg-gray-700 px-4 py-2 font-medium uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-lg">
+                  <button class="transform rounded bg-gray-700 lg:px-4 md:px-4 md:py-2 lg:py-2 px-2 py-1  sm:text-sm md:font-medium lg:font-medium font-light uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-lg">
                     Message
                   </button>
                 </div>
               </div>
-              <div class="mt-[150px] text-center pb-12">
-                <h1 class="text-4xl font-medium text-gray-700">
+              <div class="lg:mt-[150px] md:mt-[150px] mt-10 text-center pb-12">
+                <h1 class="lg:text-4xl md:text-4xl text-xl font-medium text-gray-700">
                   Shubhanshu Nayak,
                   <span class="font-light text-gray-500">18</span>
                 </h1>
-                <p class="font-light text-gray-600 mt-3">Delhi, India</p>
-                <p class="mt-8 text-gray-500">
+                <p class="font-light text-gray-600 lg:text-2xl xl:text-2xl md:text-xl text-xs  mt-3">Delhi, India</p>
+                <p class="lg:mt-8 md:mt-8 mt-4 lg:text-2xl xl:text-2xl md:text-2xl text-xs  text-gray-500">
                   Full stack Developer | M.E.R.N Developer
                 </p>
-                <p class="mt-2 text-gray-500">Self Taught</p>
+                <p class="mt-2 text-gray-500 lg:text-xl xl:text-xl md:text-xl text-xs ">Self Taught</p>
               </div>
-              <div class="pt-12 border-t flex flex-col justify-center">
-                <p class="text-gray-600 text-center font-light lg:px-16">
+              <div class="lg:pt-12 md:pt-12 border-t flex flex-col justify-center">
+                <p class="text-gray-600 text-center font-light lg:text-xl xl:text-xl md:text-xl text-xs lg:px-16">
                   Hello! I am Shubhanshu Nayak, a skilled Full Stack developer
                   proficient in React.js, Express.js, Node.js, MongoDB etc. I
                   excel in creating clean, responsive designs and am dedicated
