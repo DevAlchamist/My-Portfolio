@@ -53,6 +53,9 @@ const Skill = () => {
                 <div className="w-fit p-1 border text-base bg-slate-200 shadow-lg border-yellow-400 rounded">
                   Authorization
                 </div>
+                <div className="w-fit p-1 border text-base bg-slate-200 shadow-lg border-blue-400 rounded">
+                  Convex & Clerk
+                </div>
               </div>
             </div>
             <div className="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">

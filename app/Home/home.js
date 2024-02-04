@@ -12,11 +12,23 @@ const HomePage = () => {
           <div class="p-16">
             <div class="p-8 bg-white shadow mt-24">
               <div class="grid grid-cols-1 md:grid-cols-3">
-                <div class="grid grid-cols-3 text-center md:order-first mt-20 md:mt-0"></div>
+                <div class="mt-20 hidden grid-cols-2 text-center md:mt-0 md:grid lg:grid xl:grid">
+                  <button class="w-fit rounded bg-blue-400 px-4 py-2 font-medium uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-lg">
+                    Connect
+                  </button>
+                </div>
                 <div class="relative">
-                  <div class="w-52 h-52 bg-indigo-100 border border-gray-300 overflow-hidden mx-auto rounded-full dark:shadow-gray-600 shadow-xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500">
-                    <Image src={img1} alt="" className=""></Image>
+                  <div class="absolute inset-x-0 top-0 mx-auto -mt-24 flex h-52 w-52 items-center justify-center overflow-hidden rounded-full border border-gray-300 bg-indigo-100 text-indigo-500 shadow-xl dark:shadow-gray-600">
+                    <Image src={img1} alt="" className=" h-full w-full "/>
                   </div>
+                </div>
+                <div class="mt-32 flex items-end justify-between md:mt-0 md:justify-end lg:justify-end">
+                  <button class="flex transform rounded bg-blue-400 px-4 py-2 font-medium uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-lg md:hidden lg:hidden">
+                    Connect
+                  </button>
+                  <button class="transform rounded bg-gray-700 px-4 py-2 font-medium uppercase text-white shadow transition hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-lg">
+                    Message
+                  </button>
                 </div>
               </div>
               <div class="mt-[150px] text-center pb-12">
