@@ -2,7 +2,7 @@ import React from "react";
 import pro1 from "../../Image/Shop-Pulse-DevAlchamist.png";
 import pro2 from "../../Image/Cine-Verse-DevAlchamist.png";
 import pro3 from "../../Image/20240127_134853.jpg";
-import pro4 from "../../Image/Web capture_28-1-2024_104844_localhost.jpeg";
+import pro4 from "../../Image/Task-Mate.jpeg";
 import Image from "next/image";
 
 const Projects = () => {
@@ -22,17 +22,17 @@ const Projects = () => {
       visit: "https://cine-verse-dev-alchamist.vercel.app/",
     },
     {
-      image: pro3,
-      name: "Wing-Chat",
-      tech: "MongoDB, Express js, React js, Nodejs, Redux",
-      additional: "JWT, passport, Multer, Cloudinary",
-      visit: "",
-    },
-    {
       image: pro4,
       name: "Task-Mate",
       tech: "MongoDB, next js",
       additional: "...",
+      visit: "https://task-mate-dev-alchamist.vercel.app/",
+    },
+    {
+      image: pro3,
+      name: "Wing-Chat",
+      tech: "MongoDB, Express js, React js, Nodejs, Redux",
+      additional: "JWT, passport, Multer, Cloudinary",
       visit: "",
     },
   ];
@@ -58,7 +58,9 @@ const Projects = () => {
                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                       {item.name}
                     </h1>
-                    <p className="leading-relaxed mb-3">Tech-Stack : {item.tech}</p>
+                    <p className="leading-relaxed mb-3">
+                      Tech-Stack : {item.tech}
+                    </p>
                     <p className="leading-relaxed mb-3">
                       Additional : {item.additional}
                     </p>
